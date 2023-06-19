@@ -1,0 +1,84 @@
+.banner__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 190px 50px;
+  color: white;
+}
+
+.banner__wrapper h1 {
+  font-size: 70px;
+  line-height: 1.25;
+  text-align: center;
+  color: white;
+}
+
+.banner__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.button__description {
+  text-align: center;
+  color: white;
+
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 0 80px;
+}
+
+.banner__btn-first {
+  margin-right: 20px;
+}
+
+.banner__btn-second {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  .banner__wrapper {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .banner__wrapper h1 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .banner__buttons-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .two-buttons-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .banner__btn-first-mobile {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .banner__wrapper h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner__wrapper h1 {
+    font-size: 28px;
+  }
+}
